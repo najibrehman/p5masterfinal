@@ -1,0 +1,181 @@
+object {
+  position: center;
+  float: center;
+  margin: 4.5em .5em 2em .5em;
+  z-index: 2;
+  max-width: 26em;
+}
+
+.logo object {
+  top: 0;
+  left: 0;
+  z-index: 0;
+  margin-top: 4.25em;
+  width: 100%;
+  max-width: 100%;
+}
+p {
+  font-family: "Helvetica", sans-serif;
+  padding: 0 10em 0 3.75em; /* 0 160px 0 60px */
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  height: 4.5em;
+  list-style: none;
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  float: fixed;
+}
+
+nav li {
+  display: inline;
+  float: center;
+  padding: .625em 0;
+  font-size: 3em;
+  font-family: 'Raleway',sans-serif;
+}
+
+nav a:link, nav a:visited {
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+}
+nav a:hover {
+  color: black;
+  background: yellow;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+}
+
+.page{
+  position: fixed;
+  margin-top: 100px;
+}
+
+h2{
+  font-family: "Helvetica",sans-serif;
+  font-size: 3em;
+  margin: 0;
+  color: black;
+  text-transform: lowercase;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.list-1, .list-2 {
+  padding-left: 2em;
+}
+
+ul.hlist, ul.list-1, ul.list-2 {
+  margin-top: -1em;
+}
+
+@media screen and (max-width: 875px) {
+  .mainpic {
+    display: none;
+  }
+    object + ul {
+    left: 10px;
+  }
+    object {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin-top: 3.75em;
+    width: 100%;
+    max-width: 100%;
+  }
+    object + ul {
+    display: none;
+  }
+    h2.afterpic {
+    margin-top: 1em;
+  }
+  p {
+    padding-right: 5em;
+  }
+  h2 + ul a:link, h2 + ul a:visited {
+    font-size: .625em;
+    padding: auto 5px;
+  }
+}
+
+@media screen and (min-width: 835px) {
+    .vid {
+    padding-bottom: 0; /* 16:9 */
+   /* padding-top: 0;*/
+   height: 480px;
+   width: 853px;
+  }
+}
+body, html {
+padding: 0;
+margin: 0 auto;
+text-align: left;
+font-family: 'Raleway';
+max-width: 1800px;
+}
+
+img.profile {
+  width: 250px;
+  float: right;
+}
+th {
+  padding: 0 10px;
+  border: 0;
+  border-spacing: 0;
+}
+
+body {
+  background: white;
+  height: 100%;
+  width: 100%;
+  padding: auto 0;
+  margin: 0;
+  vertical-align: right;
+  transition:  0.5s; 
+    -o-transition: 0.5s; 
+    -moz-transition: 0.5s; 
+    -webkit-transition: 0.5s;
+}
+
+
+}
+
+table {
+  position: absolute;
+  height: 50%;
+  width: 30%;
+  top: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+img {
+  width: 700px;
+  height: 500px;
+  padding-top: 30px;
+}
+
+.profile{
+  width: 500px;
+  height: 500px;
+}
